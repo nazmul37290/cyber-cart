@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { ShoppingCart, Search, Menu, X, User, Store, Info } from "lucide-react"
+import Image from "next/image"
 
 const navigationMenus = [
   {
@@ -31,10 +32,9 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
-              <span className="text-white font-bold text-lg">P</span>
-            </div>
-            <span className="text-xl font-bold text-white hidden sm:inline">Premium</span>
+
+            <Image src={'/cyber-cart.png'} alt="cyber-cart-logo" className="bg-blend-multiply" width={180} height={40}></Image>
+
           </Link>
 
           {/* Navigation - Desktop */}
