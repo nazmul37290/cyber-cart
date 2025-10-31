@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Mail, Phone, MapPin } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -9,10 +10,8 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
-                <span className="text-white font-bold">P</span>
-              </div>
-              <span className="text-lg font-bold text-white">Premium</span>
+              <Image src={'/cyber-cart.png'} alt="cyber-cart-logo" className="bg-blend-multiply" width={150} height={40}></Image>
+
             </div>
             <p className="text-slate-400 text-sm">
               Discover premium products with an elegant, modern shopping experience.

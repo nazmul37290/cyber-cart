@@ -6,6 +6,7 @@ import { Footer } from "@/components/footer"
 import { ShopFilters } from "@/components/shop/shop-filters"
 import { ProductGrid } from "@/components/shop/product-grid"
 import { ShopHeader } from "@/components/shop/shop-header"
+import FrontendLayout from "@/components/layout/frontend-layout"
 
 export default function ShopPage() {
   const [sortBy, setSortBy] = useState("trending")
@@ -17,8 +18,9 @@ export default function ShopPage() {
   })
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
+    <FrontendLayout>
+
+
       <main>
         <ShopHeader />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -35,7 +37,8 @@ export default function ShopPage() {
           </div>
         </div>
       </main>
-      <Footer />
-    </div>
+
+
+    </FrontendLayout>
   )
 }

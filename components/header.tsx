@@ -12,6 +12,11 @@ const navigationMenus = [
     icon: Store,
   },
   {
+    label: 'Categories',
+    href: '/categories',
+    icon: Info,
+  },
+  {
     label: 'About',
     href: '/about',
     icon: Info,
